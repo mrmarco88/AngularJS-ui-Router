@@ -11,6 +11,10 @@
 		$urlRouterProvider.otherwise('/home');
 		
         $stateProvider
+		.state('about',{
+			url: '/about',
+			templateUrl: 'templates/about.html'
+		})
 		.state('home', {
             url: '/home',
             templateUrl: 'templates/main.html',            
@@ -18,7 +22,7 @@
                 movieList: function($http){
 					return $http.get("https://api.myjson.com/bins/u7frr").then( 
 					function (response){
-						alert("Sto chiamando series");
+						//alert("Sto chiamando series");
 						console.debug("response: " + response);
 						console.debug(response);
 						console.debug("response.data: "+response.data);
@@ -41,7 +45,8 @@
 			templateUrl: 'templates/list.html',
             resolve: {
                 titleList: function($http){
-					return $http.get("https://api.myjson.com/bins/15io9j").then( 
+					//return $http.get("https://api.myjson.com/bins/15io9j").then( 
+					return $http.get("https://api.myjson.com/bins/n0clz").then( 
 					function (response){
 						console.debug(response.data);
 						return response;
