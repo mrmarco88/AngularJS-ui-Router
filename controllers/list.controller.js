@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('movieApp',[])
+        .module('movieApp')
         .controller('ListCtrl', ListCtrl);
 
     ListCtrl.$inject = ['$scope','$stateParams', 'titleList'];
@@ -23,7 +23,7 @@
 		}
 		
         vm.movies=titleList.data.movies;
-		var numMovies = $scope.movies.length;
+		var numMovies = vm.movies.length;
 		for(var i=0; i<numMovies;i++){
 			if(vm.movies[i].id == vm.movieID){
 				vm.movieName=vm.movies[i].series;

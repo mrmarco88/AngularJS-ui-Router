@@ -39,10 +39,6 @@
 		.state('home.list', {	
             url: '/list/:movieID', 
 			templateUrl: 'templates/list.html',
-            
-            //controllerAs: 'lc'
-        
-            
             resolve: {
                 titleList: function($http){
 					return $http.get("https://api.myjson.com/bins/15io9j").then( 
@@ -56,8 +52,8 @@
 					);
 				}
 			},
-			controller: 'ListCtrl'
-					
+			controller: 'ListCtrl',
+			controllerAs: 'lc'	
             
         });
     }
