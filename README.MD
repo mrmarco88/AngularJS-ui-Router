@@ -1,0 +1,1 @@
+Una semplice web-app per capire il funzionamento di angular-ui-router
