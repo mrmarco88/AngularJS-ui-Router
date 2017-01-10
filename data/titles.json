@@ -1,0 +1,34 @@
+{"movies":[
+	{
+	"id":1,
+	"series":"Star Wars",
+	"episodes":[
+	"La minaccia fantasma",
+	"L'attacco dei cloni",
+	"La vendetta dei Sith",
+	"Una nuova speranza",
+	"L'impero colpisce ancora",
+	"Il ritorno dello jedi",
+	"Il risveglio della forza",
+	"La spada laser ed il droide"
+	]},
+	{
+	"id":2,
+	"title":"Harry Potter",
+	"episodes":[
+	"La pietra filosofale",
+	"La camera dei segreti",
+	"Il calice di fuoco",
+	"L'ordine della fenice",
+	"Il principe mezzo sangue",
+	"I doni della morte"
+	]	},
+	{
+	"id":3,
+	"title":"Lord of the Rings",
+	"episodes":[
+	"La compagnia dell'anello",
+	"Le due torri",
+	"Il ritorno del re"]
+	}
+]}
